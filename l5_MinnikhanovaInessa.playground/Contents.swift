@@ -117,7 +117,7 @@ extension TruckCar: CustomStringConvertible{                        // расш�
 
 extension SportCar: CustomStringConvertible{ 
       var description: String{
-        return "";//"Автомобиль \(stamp) год \(year)"    // определяем, что именно будет выводиться
+        return "Автомобиль \(stamp) год \(year)"    // определяем, что именно будет выводиться
     }
     
 }
@@ -135,7 +135,7 @@ extension SportCar: CustomStringConvertible{
 // truckCar2.startEngine()
  //truckCar2.openWindow()
 
-sportCar1.print()
+print(sportCar1.description)
 //sportCar2.printAll()
 //truckCar1.printAll()
 //truckCar2.printAll() 
