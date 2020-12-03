@@ -110,14 +110,14 @@ class SportCar: Car {
 
 extension TruckCar: CustomStringConvertible{                        // расширяем протокол
     var description: String{
-        return ""//"Автомобиль "+self.stamp.rawValue+", год " + self.year.description    // определяем, что именно будет выводиться
+        return "Грузовой автомобиль \(stamp) год \(year)"    // определяем, что именно будет выводиться
     }
 
 }
 
 extension SportCar: CustomStringConvertible{ 
       var description: String{
-        return "Автомобиль \(stamp) год \(year)"    // определяем, что именно будет выводиться
+        return "Спортивный автомобиль \(stamp) год \(year)"    // определяем, что именно будет выводиться
     }
     
 }
@@ -128,16 +128,18 @@ extension SportCar: CustomStringConvertible{
  var truckCar1 = TruckCar(stamp: .Peugeot, year: 2019, start: false, openWindows: false, volume: 2000)
  var truckCar2 = TruckCar(stamp: .Volvo, year: 2010, start: false, openWindows: false, volume: 100000)
 
- //sportCar1.closeWindow()
- //sportCar2.startEngine()
- //truckCar1.loadCargo()
-// truckCar1.loadCargo()
+ sportCar1.closeWindow()
+// sportCar2.startEngine()
+ truckCar1.loadCargo()
+//truckCar1.loadCargo()
 // truckCar2.startEngine()
- //truckCar2.openWindow()
+//truckCar2.openWindow()
+
 
 print(sportCar1.description)
-//sportCar2.printAll()
-//truckCar1.printAll()
-//truckCar2.printAll() 
+print(truckCar1.description)
+sportCar2.printAll()
+truckCar1.printAll()
+truckCar2.printAll() 
 
 
